@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="calender" class="action.DatePicker">
+			<result name="success">/calender.jsp</result>
+		</action>
+		<action name="tasks" class="action.Tasks">
+			<result name="success">/tasks.jsp</result>
+			<result name="input">/tasks.jsp</result>
+		</action>
+	</package>
+</struts>
